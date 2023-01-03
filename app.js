@@ -34,7 +34,7 @@ secim.addEventListener("click", (e) => {
 
 function pc() {
     pcRandom = pcArr[Math.floor(Math.random() * 6)]
-    pcChoice.innerHTML = `<img src="./${pcRandom}.png" alt="kagit"></img>`
+    pcChoice.innerHTML = `<img src="./${pcRandom}.png"></img>`
     result()
 }
 
@@ -87,7 +87,6 @@ function result() {
 
     if (scorePc.innerText == 10 || scoreYou.innerText == 10) {
         resultDiv.innerHTML += `<br> Game Over <br> <button onclick="window.location.reload();">Play Again</button>`
-        document.body.style.backgroundColor = '#A1B42A';
     }
 }
 
