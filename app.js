@@ -19,11 +19,11 @@ secim.addEventListener("click", (e) => {
         resultDiv.innerHTML = '';
         userSelect = e.target.className;
         if (userSelect == "tas") {
-            yourChoice.innerHTML = `<img src="./tas.png" alt="tas" class="tas"></img>`
+            yourChoice.innerHTML = `<img src="./assets/tas.png" alt="tas" class="tas"></img>`
         } else if (userSelect == "kagit") {
-            yourChoice.innerHTML = `<img src="./kagit.png" alt="kagit"></img>`
+            yourChoice.innerHTML = `<img src="./assets/kagit.png" alt="kagit"></img>`
         } else if (userSelect == "makas") {
-            yourChoice.innerHTML = `<img src="./makas.png" alt="makas"></img>`
+            yourChoice.innerHTML = `<img src="./assets/makas.png" alt="makas"></img>`
         }
         // setTimeout(pc, 100)
         pc()
@@ -34,7 +34,7 @@ secim.addEventListener("click", (e) => {
 
 function pc() {
     pcRandom = pcArr[Math.floor(Math.random() * 6)]
-    pcChoice.innerHTML = `<img src="./${pcRandom}.png"></img>`
+    pcChoice.innerHTML = `<img src="./assets/${pcRandom}.png"></img>`
     result()
 }
 
